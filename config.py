@@ -1,0 +1,9 @@
+files_folder = "files" #Folder to pull data from
+departs = "depart_list.txt"
+dests = "dest_list.txt"
+proxies = "proxies.txt"
+depart_dates = "date_depart.txt"
+return_dates = "date_return.txt" # Set to "None" (without quotes) if not applicable, or empty the file
+number_of_possible_concurrent_connections = 10 # Self explanitory : number of possible concurrent connections. The script will use as many as it can, if there are enough jobs to assign to the connections.
+limit_results = None # Set to a number if you don't want to go through all results. None (!!case sensitive!!, without quotes) if you just want to process all search links.
+time_to_wait_between_requests = 3 #number of seconds to wait between requests on a single thread. PHP API had this set to 3 seconds
